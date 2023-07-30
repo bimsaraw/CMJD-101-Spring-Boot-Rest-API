@@ -3,10 +3,9 @@ package com.ijse.restapi.repository;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.ijse.restapi.entity.User;
+import com.ijse.restapi.entity.Item;
 
 @Repository
-
-public interface UserRepository extends JpaRepository<User, Long> {
-    User findUserByUsername(String username);
+public interface ItemRepository extends JpaRepository<Item, Long> {
+    //Custom Queries
 }
